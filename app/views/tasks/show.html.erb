@@ -1,0 +1,10 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<p><%= @task.completed %></p>
+
+<%= link_to "borrar tarea", task_path(@task), method: :delete, data: { confirm: "bist du sicher?"} %>
+<br>
+<%= link_to "editar tarea", edicion_path %>
+<%#  get "tasks/:id/edit", to: "tasks#edit" %>
+<br>
+<%= link_to "listado inicial", tasks_path %>
